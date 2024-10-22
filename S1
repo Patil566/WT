@@ -1,0 +1,55 @@
+//s1 q1//
+<html>
+<head>
+  <title>Project Management</title>
+  <style>
+  body{background-color:green;}
+  </style>
+</head>
+<body>
+<h1>Project Management</h1>
+<label>Project Name:</label>
+<input type="text" placeholder="project name">
+<br>
+<label for="assigned-to">Assigned to:</label>
+<select id="assigned-to">
+<option>ROSHAN</option><br>
+</select>
+<br>
+<label>Start Date:</label>
+<input type="date">
+<br>
+<label>End Date:</label>
+<input type="date" >
+<br>
+    <label>Priority:</label>
+    <input type=radio>
+    <label>High</label>
+    <input type="radio">
+    <label>Average</label>
+<br>
+<tr><td>Description:</td></tr><input type="Description"></tr></td>
+<br>
+<tr><td><input type=submit value="submit"</td></tr>
+<tr><td><input type=reset value="reset"</td></tr>
+</centre>
+</body>
+</html>
+
+//fds//
+//q1//
+import pandas as pd
+import matplotlib.pyplot as plt
+d = pd.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv')
+ax=plt.subplots(1,1,figsize=(10,8)) //defines size of chart area
+d['Species'].value_counts().plot.pie() //counts distinct values in dataset
+plt.title("Iris Species %")
+plt.show()
+
+//q2//
+ import pandas as p
+df = pd.read_csv('C:\\Users\\DELL\\winequality-red.csv')
+df.shape # no.of rows & cols
+df.describe() #stats data
+df.info() #features
+df.dtypes 
