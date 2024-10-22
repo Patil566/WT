@@ -1,0 +1,33 @@
+<HTML>
+<HEAD><TITLE><CENTER>My CITY</CENTER></TITLE></HEAD>
+<body style="background-color:red">
+<h1 style="color:blue;">Nashik Maharashtra</h1>
+<p style="background:yellow;">Landmarks</p><br>
+<h2 style=;font-style:italic;">Kalaram Temple</h2><BR>
+<h2 style="font-style:bold;">Godavri River</h2><BR>
+<h2 style="font-style:italic;">Kalaram Temple</h2><BR>
+<IMG SRC="Desert.jpg">
+</body>
+</HTML>
+
+
+fds//q1//
+import pandas as p
+import numpy as n
+d=p.read_csv('D:\yogita\ss.csv')
+v=d['age'].mean()
+v1=d['salary'].mean()
+d['age'].fillna(v,inplace=True)
+d['salary'].fillna(v1,inplace=True)
+print(d)
+
+//q2//
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as p
+df=p.DataFrame({'name':['kunal','rekha','satish','ashish','radha'],
+ 'age':[20,23,22,20,21],
+ 'per':[98,80,95,92,85],
+ 'salary':[100000,300000,20000,300000,80000] })
+df.plot(x="name",y="salary")
+plt.show()
